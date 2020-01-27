@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+
+section {
+  background-color: #eeeeee; }
+
+section,
+.container,
+.container-fluid {
+  position: relative;
+  word-wrap: break-word; }
+
+a.mbr-iconfont:hover {
+  text-decoration: none; }
+
+.article .lead p, .article .lead ul, .article .lead ol, .article .lead pre, .article .lead blockquote {
+  margin-bottom: 0; }
+
+a {
+  font-style: normal;
+  font-weight: 400;
+  cursor: pointer; }
+  a, a:hover {
+    text-decoration: none; }
+
+figure {
+  margin-bottom: 0; }
+
+body {
+  color: #232323; }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+.display-1, .display-2, .display-3, .display-4 {
+  line-height: 1;
+  word-break: break-word;
+  word-wrap: break-word; }
+
+b, strong {
+  font-weight: bold; }
+
+blockquote {
+  padding: 10px 0 10px 20px;
+  position: relative;
+  border-left: 2px solid;
+  border-color: #ff3366; }
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+  transition-delay: 9999s;
+  transition-property: background-color, color; }
+
+textarea[type="hidden"] {
+  display: none; }
+
+body {
+  position: relative; }
+
+section {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  section .mbr-background-video,
+  section .mbr-background-video-preview {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0; }
+
+.hidden {
+  visibility: hidden; }
+
+.mbr-z-index20 {
+  z-index: 20; }
+
+/*! Base colors */
+.mbr-white {
+  color: #ffffff; }
+
+.mbr-black {
+  color: #000000; }
+
+.mbr-bg-white {
+  background-color: #ffffff; }
+
+.mbr-bg-black {
+  background-color: #000000; }
+
+/*! Text-aligns */
+.align-left {
+  text-align: left; }
+
+.align-center {
+  text-align: center; }
+
+.align-right {
+  text-align: right; }
+
+@media (max-width: 767px) {
+  .align-left, .align-center, .align-right, .mbr-section-btn, .mbr-section-title {
+    text-align: center; } }
+/*! Font-weight  */
+.mbr-light {
+  font-weight: 300; }
+
+.mbr-regular {
+  font-weight: 400; }
+
+.mbr-semibold {
+  font-weight: 500; }
+
+.mbr-bold {
+  font-weight: 700; }
+
+/*! Media  */
+.media-size-item {
+  -webkit-flex: 1 1 auto;
+  -moz-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  -o-flex: 1 1 auto;
+  flex: 1 1 auto; }
+
+.media-content {
+  -webkit-flex-basis: 100%;
+  flex-basis: 100%; }
+
+.media-container-row {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: start;
+  -ms-flex-align: start;
+  align-items: start; }
+  .media-container-row .media-size-item {
+    width: 400px; }
+
+.media-container-column {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch; }
+  .media-container-column > * {
+    width: 100%; }
+
+@media (min-width: 992px) {
+  .media-container-row {
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap; } }
+figure {
+  overflow: hidden; }
+
+figure[mbr-media-size] {
+  transition: width 0.1s; }
+
+.mbr-figure img, .mbr-figure iframe {
+  display: block;
+  width: 100%; }
+
+.card {
+  background-color: transparent;
+  border: none; }
+
+.card-img {
+  text-align: center;
+  flex-shrink: 0; }
+
+.media {
+  max-width: 100%;
+  margin: 0 auto; }
+
+.mbr-figure {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  -webkit-align-self: center;
+  align-self: center; }
+
+.media-container > div {
+  max-width: 100%; }
+
+.mbr-figure img, .card-img img {
+  width: 100%; }
+
+@media (max-width: 991px) {
+  .media-size-item {
+    width: auto !important; }
+
+  .media {
+    width: auto; }
+
+  .mbr-figure {
+    width: 100% !important; } }
+/*! Buttons */
+.mbr-section-btn {
+  margin-left: -.25rem;
+  margin-right: -.25rem;
+  font-size: 0; }
+
+nav .mbr-section-btn {
+  margin-left: 0rem;
+  margin-right: 0rem; }
+
+/*! Btn icon margin */
+.btn .mbr-iconfont, .btn.btn-sm .mbr-iconfont {
+  cursor: pointer;
+  margin-right: 0.5rem; }
+
+.btn.btn-md .mbr-iconfont, .btn.btn-md .mbr-iconfont {
+  margin-right: 0.8rem; }
+
+.mbr-regular {
+  font-weight: 400; }
+
+.mbr-semibold {
+  font-weight: 500; }
+
+.mbr-bold {
+  font-weight: 700; }
+
+[type="submit"] {
+  -webkit-appearance: none; }
+
+/*! Full-screen */
+.mbr-fullscreen .mbr-overlay {
+  min-height: 100vh; }
+
+.mbr-fullscreen {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  min-height: 100vh;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+/*! Map */
+.map {
+  height: 25rem;
+  position: relative; }
+  .map iframe {
+    width: 100%;
+    height: 100%; }
+
+/* Form */
+.form-asterisk {
+  font-family: initial;
+  position: absolute;
+  top: -2px;
+  font-weight: normal; }
+
+/*! Scroll to top arrow */
+.mbr-arrow-up {
+  bottom: 25px;
+  right: 90px;
+  position: fixed;
+  text-align: right;
+  z-index: 5000;
+  color: #ffffff;
+  font-size: 32px;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg); }
+
+.mbr-arrow-up a {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  outline-style: none !important;
+  position: relative;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+  text-align: center; }
+  .mbr-arrow-up a:hover {
+    background-color: rgba(0, 0, 0, 0.4); }
+  .mbr-arrow-up a i {
+    line-height: 60px; }
+
+.mbr-arrow-up-icon {
+  display: block;
+  color: #fff; }
+
+.mbr-arrow-up-icon::before {
+  content: "\203a";
+  display: inline-block;
+  font-family: serif;
+  font-size: 32px;
+  line-height: 1;
+  font-style: normal;
+  position: relative;
+  top: 6px;
+  left: -4px;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg); }
+
+/*! Arrow Down */
+.mbr-arrow {
+  position: absolute;
+  bottom: 45px;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  background-color: rgba(80, 80, 80, 0.5);
+  border-radius: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%); }
+  .mbr-arrow > a {
+    display: inline-block;
+    text-decoration: none;
+    outline-style: none;
+    -webkit-animation: arrowdown 1.7s ease-in-out infinite;
+    animation: arrowdown 1.7s ease-in-out infinite; }
+    .mbr-arrow > a > i {
+      position: absolute;
+      top: -2px;
+      left: 15px;
+      font-size: 2rem; }
+
+@keyframes arrowdown {
+  0% {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px); }
+  50% {
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px); }
+  100% {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px); } }
+@-webkit-keyframes arrowdown {
+  0% {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px); }
+  50% {
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px); }
+  100% {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px); } }
+@media (max-width: 500px) {
+  .mbr-arrow-up {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%) rotate(180deg);
+    -webkit-transform: translateX(-50%) rotate(180deg); } }
+/*Gradients animation*/
+@keyframes gradient-animation {
+  from {
+    background-position: 0% 100%;
+    animation-timing-function: ease-in-out; }
+  to {
+    background-position: 100% 0%;
+    animation-timing-function: ease-in-out; } }
+@-webkit-keyframes gradient-animation {
+  from {
+    background-position: 0% 100%;
+    animation-timing-function: ease-in-out; }
+  to {
+    background-position: 100% 0%;
+    animation-timing-function: ease-in-out; } }
+.bg-gradient {
+  background-size: 200% 200%;
+  animation: gradient-animation 5s infinite alternate;
+  -webkit-animation: gradient-animation 5s infinite alternate; }
+
+.menu .navbar-brand {
+  display: -webkit-flex; }
+  .menu .navbar-brand span {
+    display: flex;
+    display: -webkit-flex; }
+  .menu .navbar-brand .navbar-caption-wrap {
+    display: -webkit-flex; }
+  .menu .navbar-brand .navbar-logo img {
+    display: -webkit-flex; }
+@media (min-width: 768px) and (max-width: 991px) {
+  .menu .navbar-toggleable-sm .navbar-nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox; } }
+@media (min-width: 992px) {
+  .menu .navbar-nav.nav-dropdown {
+    display: -webkit-flex; }
+  .menu .navbar-toggleable-sm .navbar-collapse {
+    display: -webkit-flex !important; } }
+
+/*# sourceMappingURL=style.css.map */
+.engine {
+	position: absolute;
+	text-indent: -2400px;
+	text-align: center;
+	padding: 0;
+	top: 0;
+	left: -2400px;
+}
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Delta Force Techs Developers Center</title>
+    <meta name="twitter:description" content="Developers and Gamers group working with Discord and GtitHub">
+    <meta name="twitter:image" content="/assets/img/avatars/avatar.jpg?h=278f507cd9cb138520b2905bc64f71e6">
+    <meta name="description" content="Delta Force Techs Developers Official Website
+Discord Bots and Website Developers.">
+    <meta name="DF Techs" content="Community of Developers and Gamers at DF Techs.">
+    <meta name="twitter:title" content="Delta Force Techs Developers Center">
+    <meta name="twitter:card" content="summary">
+    <meta name="theme-color" content="rgb(245,108,49)">
+    <link rel="icon" type="image/jpeg" sizes="118x126" href="/assets/img/avatar.jpg?h=fcecfe764c464e6d966dfdc59e85145a">
+    <link rel="icon" type="image/jpeg" sizes="118x126" href="/assets/img/avatars/avatar.jpg?h=278f507cd9cb138520b2905bc64f71e6">
+    <link rel="icon" type="image/jpeg" sizes="118x126" href="/assets/img/avatars/avatar.jpg?h=278f507cd9cb138520b2905bc64f71e6">
+    <link rel="icon" type="image/jpeg" sizes="118x126" href="/assets/img/avatars/avatar.jpg?h=278f507cd9cb138520b2905bc64f71e6">
+    <link rel="icon" type="image/jpeg" sizes="118x126" href="/assets/img/avatars/avatar.jpg?h=278f507cd9cb138520b2905bc64f71e6">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css?h=35161606fe949049939f1d70846a5d85">
+    <link rel="manifest" href="/manifest.json?h=bd6e595e419671f33752be768582dfec">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+</head>
+
+<body>
+    <!-- Start: Special Skills Block -->
+    <section class="portfolio-block skills">
+        <!-- Start: Header Gradient -->
+        <nav class="navbar navbar-dark navbar-expand-lg fixed-top portfolio-navbar gradient">
+            <div class="container"><a class="navbar-brand logo" href="/index.html">Delta Force Techs Developers</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div
+                    class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item item" role="presentation"><a class="nav-link active" href="/index.html">Home</a></li>
+                        <li class="nav-item item" role="presentation"><a class="nav-link" href="/projects.html">Projects</a></li>
+                        <li class="nav-item item" role="presentation"><a class="nav-link" href="/contact">Contact US</a></li>
+                        <li class="nav-item item" role="presentation"><a class="nav-link" href="/hire-me.html">Join Us</a></li>
+                    </ul>
+            </div>
+            </div>
+        </nav>
+        <!-- End: Header Gradient -->
+        <div class="container">
+            <!-- Start: portfolio heading -->
+            <div class="heading">
+                <h2>The page is under developement ??!!!!!!!!!!!!!!!!!!!!!!!!!!!!</h2>
+            </div>
+            <!-- End: portfolio heading -->
+            <div class="container">
+                <div class="media-container-row">
+                    <div class="title col-12 align-center">
+                        <h2 class="pb-3 mbr-fonts-style display-2">
+                            Our team</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container pt-3 mt-2">
+                <div class="media-container-row">
+                    <div class="mbr-testimonial p-3 align-center col-12 col-md-6">
+                        <div class="panel-item p-3">
+                            <div class="card-block">
+                                <div class="testimonial-photo">
+                                    <img src="assets/images/atg-640x640.jpg" alt="" title="">
+                                </div>
+                                <p class="mbr-text mbr-fonts-style display-7">
+                                   Student, Linux lover, active in Android development since June 2017.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="mbr-author-name mbr-bold mbr-fonts-style display-7">
+                                     ATG Droid</div>
+                                <small class="mbr-author-desc mbr-italic mbr-light mbr-fonts-style display-7">
+                                       Founder, Lead developer
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="mbr-testimonial p-3 align-center col-12 col-md-6">
+                        <div class="panel-item p-3">
+                            <div class="card-block">
+                                <div class="testimonial-photo">
+                                    <img src="assets/images/dadi-640x640.jpg" alt="" title="">
+                                </div>
+                                <p class="mbr-text mbr-fonts-style display-7">
+                                   Android enthusiast and a hobby programmer. Contributing on XDA Since 2010.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="mbr-author-name mbr-bold mbr-fonts-style display-7">
+                                     Dadi11
+                                </div>
+                                <small class="mbr-author-desc mbr-italic mbr-light mbr-fonts-style display-7">
+                                       Developer
+                                </small>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>   
+        <!-- Start: Call To Action -->
+        <section class="portfolio-block call-to-action border-bottom">
+            <div class="container">
+                <div class="d-flex justify-content-center align-items-center content">
+                    <h3>Want to add your name to the list ??</h3><button class="btn btn-outline-primary btn-lg" type="button">Join US</button></div>
+            </div>
+        </section>
+        <!-- End: Call To Action -->
+        <!-- Start: Footer Gradient -->
+        <footer class="page-footer gradient">
+            <div class="container">
+                <div class="links"><a href="#">About me</a><a href="#">Contact me</a><a href="#">Projects</a></div>
+                <div class="social-icons"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-instagram-outline"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a></div>
+            </div>
+        </footer>
+        <!-- End: Footer Gradient -->
+    </section>
+    <!-- End: Special Skills Block -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="/assets/js/script.min.js?h=f82c1f62e9f66b57f268c9f78badf050"></script>
+</body>
+
+</html>
