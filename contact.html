@@ -2,6 +2,61 @@
 <html>
 
 <head>
+    <style>
+       body{
+    background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
+}
+.contact-form{
+    background: #fff;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 70%;
+}
+.contact-form .form-control{
+    border-radius:1rem;
+}
+.contact-image{
+    text-align: center;
+}
+.contact-image img{
+    border-radius: 6rem;
+    width: 11%;
+    margin-top: -3%;
+    transform: rotate(29deg);
+}
+.contact-form form{
+    padding: 14%;
+}
+.contact-form form .row{
+    margin-bottom: -7%;
+}
+.contact-form h3{
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color: #0062cc;
+}
+.contact-form .btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #dc3545;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+.btnContactSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #0062cc;
+    border: none;
+    cursor: pointer;
+}
+        </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Contact - Delta Force Techs Developers</title>
@@ -24,51 +79,57 @@ Discord Bots and Website Developers.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
 </head>
 
 <body>
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
-        <div class="container"><a class="navbar-brand logo" href="#">Delta Force Techs Developers</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div
-                class="collapse navbar-collapse" id="navbarNav">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="/index.html">Home</a><a class="nav-link" href="/hire-me.html">Work with Us</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="/projects-grid-cards.html">Projects</a><a class="nav-link" href="/untitled-1.html">Social Media Pages</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="/untitled.html">Organisation Members</a><a class="nav-link active" href="/contact.html">Contact</a></li>
-                    <li class="nav-item" role="presentation"></li>
-                    <li class="nav-item" role="presentation"></li>
-                </ul>
-        </div>
-        </div>
-    </nav>
+        <div class="container"><a class="navbar-brand logo" href="#">Delta Force Techs Developers</a>
+        <a href="/index.html">Home</a>
     <main class="page contact-page">
         <section class="portfolio-block contact">
-            <div class="container">
-                <div class="heading">
-                    <h2 class="text-primary">Contact US !!!</h2>
+           
+<div class="container contact-form">
+    <div class="contact-image">
+        <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
+    </div>
+    <form method="post" action="https://formspree.io/mgeapagw">
+        <h3>Drop Us a Message</h3>
+       <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input type="text" name="Name" class="form-control" placeholder="Your Name *" value="" />
                 </div>
-                <form class="bg-success border-success shadow" action="https://formspree.io/mgeapagw" method="post" enctype="multipart/form-data">
-                    <div class="form-group"><label for="name">Your Name</label><input class="form-control item" type="text" id="name"></div>
-                    <div class="form-group"><label for="subject">Subject</label><input class="form-control item" type="text" id="subject"></div>
-                    <div class="form-group"><label for="email">Email</label><input class="form-control item" type="email" id="email"></div>
-                    <div class="form-group"><label for="message">Message</label><textarea class="form-control item" id="message"></textarea></div>
-                    <div class="form-group"><button class="btn btn-primary btn-block btn-lg" type="submit">Submit Form</button></div>
-                </form>
+                <div class="form-group">
+                    <input type="text" name="Email" class="form-control" placeholder="Your Email *" value="" />
+                </div>
+                <div class="form-group">
+                    <input type="text" name="Phone" class="form-control" placeholder="Your Phone Number *" value="" />
+                </div>
+                <div class="form-group">
+                    <div class="g-recaptcha" data-sitekey="6LecGNMUAAAAAFQS-zs1liqW_3WDuia72VnGsvjN"></div>
+                    <input type="submit" name="Submit" class="btnContact" value="Send Message" />
+                </div>
             </div>
-            <!-- Start: Footer Gradient -->
-            <footer class="page-footer gradient">
-                <div class="container">
-                    <div class="links"><a href="#">About me</a><a href="#">Contact me</a><a href="#">Projects</a></div>
-                    <div class="social-icons"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-instagram-outline"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a></div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <textarea name="Msg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
                 </div>
-            </footer>
-            <!-- End: Footer Gradient -->
+            </div>
+        </div>
+    </form>
+</div>
+            
         </section>
     </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
     <script src="/assets/js/script.min.js?h=f82c1f62e9f66b57f268c9f78badf050"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </body>
 
 </html>
